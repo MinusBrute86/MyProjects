@@ -1,0 +1,119 @@
+<MyGrid>
+    id: calculator
+    display: entry
+    button: button
+
+    GridLayout:
+        cols: 1
+        size: root.width, root.height
+
+        TextInput:
+            id: entry
+            multiline: False
+            font_size: 32
+
+        GridLayout:
+            cols: 4
+
+            # 1st Row
+            Button:
+                id: button
+                text: '7'
+                font_size: 20
+                on_press: entry.text += self.text
+
+            Button:
+                id: button
+                text: '8'
+                font_size: 20
+                on_press: entry.text += self.text
+
+            Button:
+                id: button
+                text: '9'
+                font_size: 20
+                on_press: entry.text += self.text
+
+            Button:
+                id: button
+                text: ' + '
+                font_size: 20
+                on_press: entry.text += self.text
+
+
+            # 2nd Row
+            Button:
+                id: button
+                text: '4'
+                font_size: 20
+                on_press: entry.text += self.text
+
+            Button:
+                id: button
+                text: '5'
+                font_size: 20
+                on_press: entry.text += self.text
+
+            Button:
+                id: button
+                text: '6'
+                font_size: 20
+                on_press: entry.text += self.text
+
+            Button:
+                id: button
+                text: ' - '
+                font_size: 20
+                on_press: entry.text += self.text
+
+
+            # 3rd Row
+            Button:
+                id: button
+                text: '1'
+                font_size: 20
+                on_press: entry.text += self.text
+
+            Button:
+                id: button
+                text: '2'
+                font_size: 20
+                on_press: entry.text += self.text
+
+            Button:
+                id: button
+                text: '3'
+                font_size: 20
+                on_press: entry.text += self.text
+
+            Button:
+                id: button
+                text: ' * '
+                font_size: 20
+                on_press: entry.text += self.text
+
+
+            # 4th Row
+            Button:
+                id: button
+                text: 'C'
+                font_size: 20
+                on_press: entry.text = ''
+
+            Button:
+                id: button
+                text: '0'
+                font_size: 20
+                on_press: entry.text += self.text
+
+            Button:
+                id: button
+                text: '='
+                font_size: 20
+                on_press: calculator.calculate(entry.text)
+
+            Button:
+                id: button
+                text: ' / '
+                font_size: 20
+                on_press: entry.text += self.text
