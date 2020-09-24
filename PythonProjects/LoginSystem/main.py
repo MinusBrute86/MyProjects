@@ -8,7 +8,7 @@ app.secret_key = "1234567890"
 # Database Connection Details
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'R@mpage21!'
+app.config['MYSQL_PASSWORD'] = 'sql pass'
 app.config['MYSQL_DB'] = 'pythonlogin'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
