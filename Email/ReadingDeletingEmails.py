@@ -6,7 +6,7 @@ import time
 def read_email_from_aol():
     mail = imaplib.IMAP4_SSL('imap.aol.com')
     print("Connecting to AOL...")
-    mail.login('nesteck01@aol.com', '1n2e3s')
+    mail.login('email', 'password')
     print("Logged In!")
     mail.list()
     mail.select('Inbox')
