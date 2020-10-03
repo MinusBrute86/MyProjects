@@ -3,9 +3,9 @@ import pymongo
 from pymongo import MongoClient
 
 # MongoDB Info
-user = "mongoadmin"
+user = "username"
 passwd = urllib.parse.quote_plus("p@ss")
-db_name = "MongoTutorial"
+db_name = "database"
 
 # Connect to MongoDB
 cluster = MongoClient("mongodb+srv://"+user+":"+passwd+"@cluster0.sfzab.mongodb.net/"+db_name+"?retryWrites=true&w"
