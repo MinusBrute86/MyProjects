@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 # MongoDB Info
 user = "mongoadmin"
-passwd = urllib.parse.quote_plus("R@mpage21!")
+passwd = urllib.parse.quote_plus("p@ss")
 db_name = "MongoTutorial"
 
 # Connect to MongoDB
