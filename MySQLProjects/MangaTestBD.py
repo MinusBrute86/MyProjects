@@ -9,7 +9,7 @@ path = "/top/manga"
 db = mysql.connector.connect(
     host='localhost',
     user='root',
-    passwd='R@mpage21!',
+    passwd='pass',
     database='mangatestdb'
 )
 cursor = db.cursor()
